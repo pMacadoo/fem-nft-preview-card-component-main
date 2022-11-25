@@ -61,6 +61,7 @@
   display: inline;
   color: var(--clr-neutral-100);
 }
+
 .highlight:hover {
   color: var(--clr-primary-400);
   cursor: pointer;
@@ -89,15 +90,16 @@ body {
   padding: 1.7em;
 }
 
+.nft-card__img,
+.nft-card__img--highlight {
+  border-radius: 12px;
+  width: 100%;
+}
+
 .nft-card__img--highlight:hover {
   background-color: var(--clr-primary-400);
   background-image: url(images/icon-view.svg);
   cursor: pointer;
-}
-
-.nft-card__img {
-  border-radius: 12px;
-  width: 100%;
 }
 
 .nft-card__content {
