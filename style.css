@@ -1,7 +1,90 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --clr-primary-500: hsl(215, 51%, 70%);
+  --clr-primary-400: hsl(178, 100%, 50%);
+
+  --clr-neutral-900: hsl(217, 54%, 11%);
+  --clr-neutral-800: hsl(216, 50%, 16%);
+  --clr-neutral-600: hsl(215, 32%, 27%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-regular: "Outfit", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* Utilities */
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h-rule {
+  border: 0;
+  border-top: 1px solid var(--clr-primary-500);
+}
+
+/* General Styling */
+
+body {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-primary-500);
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-light);
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* Components */
+
+.nft-card {
+  background-color: var(--clr-neutral-800);
+  border-radius: 14px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.nft-card__img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.nft-card__content {
+  display: grid;
+  gap: 1em;
+  margin-top: 1.2em;
+}
+
+.nft-card__title {
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.4em;
+}
+
+.nft-card__desc {
+  font-size: 1em;
 }
