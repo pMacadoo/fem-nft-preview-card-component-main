@@ -92,8 +92,6 @@ body {
 .nft-card__img {
   border-radius: 12px;
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .nft-card__img > img {
@@ -106,18 +104,16 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(images/icon-view.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
   border-radius: 12px;
-  visibility: hidden;
+  cursor: pointer;
 }
 
 .nft-card__img:hover::before {
   background-color: var(--clr-primary-400);
+  background-image: url(images/icon-view.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
   opacity: 0.5;
-  visibility: visible;
-  cursor: pointer;
 }
 
 .nft-card__content {
