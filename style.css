@@ -97,6 +97,7 @@ body {
 .nft-card__img > img {
   border-radius: 12px;
   width: 100%;
+  display: block;
 }
 
 .nft-card__img::before {
